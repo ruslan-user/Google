@@ -1,0 +1,24 @@
+html {
+    margin: 0 0px;
+    padding: 0 0px;
+}
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 0px;
+}
+
+header {
+    margin-top: 0px;
+    margin-left: 25%;
+    background: green;
+}
+
+.item {
+    background: black;
+    width: auto;
+    margin-left: 0px;
+    margin-right: 75%;
+    height: 400px;
+    padding: 0 0px;
+}
