@@ -1,24 +1,37 @@
-html {
-    margin: 0 0px;
-    padding: 0 0px;
-}
-.container {
-    width: 100%;
-    max-width: 1024px;
-    padding: 0 0px;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-header {
-    margin-top: 0px;
-    margin-left: 25%;
-    background: green;
+body {
+    display: grid;
+    grid-template-areas:
+        "nav header header"
+        "nav content content"
+        "nav content content";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 0.3fr;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 0;
 }
 
-.item {
-    background: black;
-    width: auto;
-    margin-left: 0px;
-    margin-right: 75%;
-    height: 400px;
-    padding: 0 0px;
+header,
+footer,
+article,
+nav {
+    padding: 20px;
+    background: lightgreen;
+}
+
+#header {
+    grid-area: header;
+}
+
+#content {
+    grid-area: content;
+}
+
+#nav {
+    grid-area: nav;
 }
