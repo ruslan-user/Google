@@ -9,9 +9,9 @@ body {
         "nav header header"
         "nav content content"
         "nav content content";
-    grid-template-rows: 60px 1fr 60px;
-    grid-template-columns: 0.3fr;
-    grid-gap: 5px;
+    grid-template-rows: 65px 1fr;
+    grid-template-columns: 19%;
+    grid-gap: 3px;
     height: 100vh;
     margin: 0;
 }
@@ -20,18 +20,81 @@ header,
 footer,
 article,
 nav {
-    padding: 20px;
+    padding: 10px;
     background: lightgreen;
 }
 
 #header {
     grid-area: header;
+    background: white;
+    padding: 0px;
+    display: flex;
+    /*
+    align-content: center;
+    justify-content: center;
+*/
+}
+
+#header input {
+    height: 75%;
+    width: 65%;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    margin-left: 4px;
+    padding-left: 40px;
+
 }
 
 #content {
     grid-area: content;
+    background: green;
 }
 
 #nav {
     grid-area: nav;
+    background: yellow;
+}
+
+.search-png {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.settings-png {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    margin-top: 21px;
+    margin-left: 69%;
+    float: right;
+}
+
+.info-png {
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    margin-top: 23px;
+    margin-left: 65%;
+}
+
+.menu-png {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 24px;
+    margin-left: 75%;
+}
+
+input[type=search] {
+    border: 0px;
+    border-radius: 3px;
+    background: #f3f5f3;
+}
+
+input[type=search]:focus {
+    background-color: white;
 }
